@@ -7,7 +7,29 @@
     <title>DOM</title>
   </head>
   <body>
-    <div class="card"></div>
+    <h1>What Are You Listening To?</h1>
+    <section class="form-parent">
+      <form id="form">
+        <div class="form-inputs">
+          <div class="form-input">
+            <label for="title">What sport do you play?</label>
+            <input type="text" id="title" class="text-box" required />
+          </div>
+          <div class="form-input">
+            <label for="Favorite Team">Favorite Team</label>
+            <input type="text" id="artist" class="text-box" required />
+          </div>
+          <div class="form-input">
+            <label for="Favorite Player">Favorite Player</label>
+            <input type="text" id="url" class="text-box" required />
+          </div>
+        </div>
+        <div class="hero-form-input">
+          <input type="submit" value="Submit" class="btn" />
+        </div>
+      </form>
+    </section>
+    <section class="display" id="display"></section>
     <script src="index.js"></script>
   </body>
 </html>
