@@ -4,32 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>DOM</title>
   </head>
   <body>
-    <h1>Sports ?</h1>
+    <h1>Sports</h1>
     <section class="form-parent">
       <form id="form">
         <div class="form-inputs">
-          <div class="form-input">
+          <div class="input">
             <label for="title">What sport do you play?</label>
             <input type="text" id="title" class="text-box" required />
           </div>
-          <div class="form-input">
+          <div class="input">
             <label for="Favorite Team">Favorite Team</label>
-            <input type="text" id="artist" class="text-box" required />
+            <input type="text" id="team" class="text-box" required />
           </div>
-          <div class="form-input">
+          <div class="input">
             <label for="Favorite Player">Favorite Player</label>
-            <input type="text" id="url" class="text-box" required />
+            <input type="text" id="player" class="text-box" required />
           </div>
         </div>
-        <div class="hero-form-input">
-          <input type="submit" value="Submit" class="btn" />
+        <div class="input">
+          <input type="submit" value="Submit" id="btn" />
         </div>
       </form>
     </section>
     <section class="display" id="display"></section>
-    <script src="index.js"></script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
