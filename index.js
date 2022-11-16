@@ -8,5 +8,4 @@ const DOMSelectors = {
 DOMSelectors.form.addEventListener("click", function () {
   let input = DOMSelectors.input.value;
   console.log(input);
-  /*  DOMSelectors.input.value = ""; */
 });
