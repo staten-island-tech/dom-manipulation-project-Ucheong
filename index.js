@@ -1,11 +1,12 @@
 const DOMSelectors = {
-  button: document.querySelector("btn"),
+  button: document.getElementById("btn"),
   form: document.getElementById("form"),
-  input: document.querySelectorAll("input"),
-  box: document.querySelectorAll("text-box"),
+  input: document.querySelectorAll(".input"),
+  box: document.getElementById("form-parent"),
 };
 
-DOMSelectors.form.addEventListener("click", function () {
+DOMSelectors.button.addEventListener("click", function () {
   let input = DOMSelectors.input.value;
   console.log(input);
+  DOMSelectors.box.insertAdjacentHTML("afterend", `<p>${input}</p>`);
 });
