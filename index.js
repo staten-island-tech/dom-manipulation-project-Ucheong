@@ -1,4 +1,4 @@
-const DOMSelectors = {
+let DOMSelectors = {
   button: document.getElementById("btn"),
   form: document.getElementById("form"),
   input: document.querySelector("input"),
