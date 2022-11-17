@@ -1,7 +1,7 @@
 const DOMSelectors = {
   button: document.getElementById("btn"),
   form: document.getElementById("form"),
-  input: document.querySelectorAll(".input"),
+  input: document.querySelector("input"),
   box: document.getElementById("form-parent"),
 };
 
