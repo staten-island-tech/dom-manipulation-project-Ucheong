@@ -16,12 +16,10 @@ DOMSelectors.form.addEventListener("submit", function () {
     input2 = DOMSelectors.input2.value,
     input3 = DOMSelectors.input3.value;
   DOMSelectors.box.insertAdjacentHTML(
-    "afterend",
-    `<p>
-  ${input1}
-  ${input2}
-  ${input3}
-  </p>`
+    "beforeend",
+    `<p>${input1}</p>
+     <p>${input2}</p>
+     <p>${input3}</p>`
   );
   DOMSelectors.input1.value = "";
   DOMSelectors.input2.value = "";
