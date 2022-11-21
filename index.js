@@ -29,8 +29,8 @@ DOMSelectors.form.addEventListener("submit", function () {
   DOMSelectors.input1.value = "";
   DOMSelectors.input2.value = "";
   DOMSelectors.input3.value = "";
-  DOMSelectors.display.addEventListener("click", function () {
-    const remove = document.querySelector(".display");
-    remove.remove();
+  DOMSelectors.remove.addEventListener("click", function () {
+    const lmao = document.querySelector(".display");
+    lmao.remove();
   });
 });
