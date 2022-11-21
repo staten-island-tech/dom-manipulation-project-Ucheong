@@ -5,7 +5,6 @@ let DOMSelectors = {
   input2: document.querySelector(".box2"),
   input3: document.querySelector(".box3"),
   box: document.getElementById("form-parent"),
-  remove: document.querySelector(".remove"),
   display: document.getElementById("display"),
 };
 
@@ -29,8 +28,9 @@ DOMSelectors.form.addEventListener("submit", function () {
   DOMSelectors.input1.value = "";
   DOMSelectors.input2.value = "";
   DOMSelectors.input3.value = "";
-  DOMSelectors.remove.addEventListener("click", function () {
-    const lmao = document.querySelector(".display");
-    lmao.remove();
+  let displaycard = document.querySelector("div.display-card"),
+    remove = displaycard.querySelector("button.remove");
+  remove.addEventListener("click", function () {
+    displaycard.remove();
   });
 });
