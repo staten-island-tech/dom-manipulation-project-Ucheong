@@ -1,10 +1,10 @@
 let DOMSelectors = {
   button: document.getElementById("btn"),
   form: document.getElementById("form"),
+  box: document.getElementById("form-parent"),
   input1: document.querySelector(".box1"),
   input2: document.querySelector(".box2"),
   input3: document.querySelector(".box3"),
-  box: document.getElementById("form-parent"),
   display: document.getElementById("display"),
 };
 
