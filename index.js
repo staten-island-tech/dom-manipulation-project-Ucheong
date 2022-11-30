@@ -25,18 +25,12 @@ DOMSelectors.form.addEventListener("submit", function () {
     <button class="remove" id="btn">Remove</button>
     </div>`
   );
-});
-
-function remove() {
+  DOMSelectors.input1.value = "";
+  DOMSelectors.input2.value = "";
+  DOMSelectors.input3.value = "";
   let displaycard = document.querySelector("div.display-card"),
     remove = displaycard.querySelector("button.remove");
   remove.addEventListener("click", function () {
     displaycard.remove();
   });
-}
-
-function clear() {
-  DOMSelectors.input1.value = "";
-  DOMSelectors.input2.value = "";
-  DOMSelectors.input3.value = "";
-}
+});
