@@ -15,9 +15,9 @@ function clearinputs() {
 }
 
 function createcard() {
-  let sport = DOMSelectors.input1.value;
-  let team = DOMSelectors.input2.value;
-  let img = DOMSelectors.input3.value;
+  let sport = DOMSelectors.input1.value,
+    team = DOMSelectors.input2.value,
+    img = DOMSelectors.input3.value;
   card(sport, img, team);
 }
 
@@ -34,7 +34,7 @@ function card(sport, img, team) {
 }
 
 function remove() {
-  const remove = document.querySelectorAll(".remove");
+  let remove = document.querySelectorAll(".remove");
   remove.forEach((removes) => {
     removes.addEventListener("click", function () {
       this.parentElement.remove();
