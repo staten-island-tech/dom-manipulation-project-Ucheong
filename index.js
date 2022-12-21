@@ -1,5 +1,4 @@
 let DOMSelectors = {
-  button: document.getElementById("btn"),
   form: document.getElementById("form"),
   box: document.getElementById("form-parent"),
   input1: document.querySelector(".box1"),
